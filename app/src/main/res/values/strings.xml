@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">CoccocTestApp</string>
+    <string name="button_book_ticket">Đặt vé</string>
+    <string name="actionbar_title_category">Phim đang chiếu</string>
+    <string name="actionbar_title_movie_detail">Thông tin phim</string>
+    <string name="movie_description_title">Tóm tắt</string>
+    <string name="movie_director">&lt;b>Đạo diễn:&lt;/b> %1$s</string>
+    <string name="movie_actress">&lt;b>Diễn viên:&lt;/b> %1$s</string>
+    <string name="movie_release_date">&lt;b>Ngày chiếu:&lt;/b> %1$s</string>
+    <string name="movie_genre">&lt;b>Thể loại:&lt;/b> %1$s</string>
+    <string name="movie_endtime">&lt;b>Độ dài:&lt;/b> %1$d</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="alert_setting_internet_title">Internet Connection Settings</string>
+    <string name="alert_setting_internet_positive">Enable Internet Connection</string>
+    <string name="alert_setting_internet_message">Your Internet Connection Settings is set to \'Off\'.
+            \nPlease Enable Internet Connection to use this app</string>
 </resources>
