@@ -6,63 +6,78 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/tvMovieTitle"
-            android:textStyle="bold"
             style="@style/TextViewMovieDetail"
-            android:textSize="@dimen/item_movie_title_size" />
+            android:textSize="@dimen/item_movie_title_size"
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/imvMovieDetail"
                 android:layout_width="@dimen/movie_detail_image_width"
                 android:layout_height="@dimen/movie_detail_image_height" />
-            <LinearLayout
-                android:layout_marginLeft="10dp"
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="@dimen/movie_detail_image_height"
+                android:layout_height="@dimen/movie_detail_image_height"
+                android:layout_marginLeft="@dimen/movie_detail_description_margin_left"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/tvDirector"
-                    style="@style/TextViewMovieDetail" />
+                    style="@style/TextViewMovieDetail"
+                    android:layout_alignParentTop="true" />
+
                 <TextView
                     android:id="@+id/tvActress"
-                    style="@style/TextViewMovieDetail" />
+                    style="@style/TextViewMovieDetail"
+                    android:layout_below="@id/tvDirector" />
+
                 <TextView
                     android:id="@+id/tvReleaseDate"
-                    style="@style/TextViewMovieDetail" />
+                    style="@style/TextViewMovieDetail"
+                    android:layout_below="@id/tvActress" />
+
                 <TextView
                     android:id="@+id/tvGenre"
-                    style="@style/TextViewMovieDetail" />
+                    style="@style/TextViewMovieDetail"
+                    android:layout_below="@id/tvReleaseDate" />
+
                 <TextView
                     android:id="@+id/tvEndTime"
-                    style="@style/TextViewMovieDetail" />
+                    style="@style/TextViewMovieDetail"
+                    android:layout_below="@id/tvGenre" />
+
                 <Button
                     android:id="@+id/btnBookTicket"
-                    android:textAllCaps="true"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="0dp"
-                    android:textStyle="bold"
+                    android:layout_width="@dimen/movie_detail_book_ticket_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:maxWidth="@dimen/movie_detail_book_ticket_max_width"
                     android:background="@android:color/holo_green_light"
+                    android:gravity="center"
                     android:text="@string/button_book_ticket"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+            </RelativeLayout>
         </LinearLayout>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/movie_description_title"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tvMovieDescription"
             android:layout_width="match_parent"

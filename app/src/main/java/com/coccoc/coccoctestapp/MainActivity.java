@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 .setNegativeButton(R.string.button_cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+                        //TODO: maybe finish this activity
                     }
                 });
         mDialog = dialog.show();
